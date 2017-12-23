@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "NotoSansRegular";
+  src: url("../fonts/NotoSansRegular/NotoSansRegular.eot");
+  src: url("../fonts/NotoSansRegular/NotoSansRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/NotoSansRegular/NotoSansRegular.woff") format("woff"),
+  url("../fonts/NotoSansRegular/NotoSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ArvoRegular";
+   src: url("../fonts/ArvoRegular/ArvoRegular.eot");
+   src: url("../fonts/ArvoRegular/ArvoRegular.eot?#iefix")format("embedded-opentype"),
+   url("../fonts/ArvoRegular/ArvoRegular.woff") format("woff"),
+   url("../fonts/ArvoRegular/ArvoRegular.ttf") format("truetype");
+   font-style: normal;
+   font-weight: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "NotoSansRegular", sans-serif;
+}
+
+main {
+  display: block;
+  width: 100%;
+  padding-top: 6.5rem;
+  padding-bottom: 8rem;
+  background-color: #f3f5f7;
+}
+
+.center-text {
+  text-align: center;
+}
+
+h1 {
+  font-family: "ArvoRegular", serif;
+  font-size: 3rem;
+  color: #3b3e6a;
+  margin-bottom: 12.4rem;
+}
+
+.col-md-3 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+} /* жуть, но так в макете - ширина 282 пикс */
+
+.img-wrapper {
+  height: 17rem;
+}
+
+img {
+  display: inline-block;
+  margin-bottom: 4rem;
+  vertical-align: middle;
+}
+
+b, p {
+  display: inline-block;
+  width: 100%;
+}
+
+b {
+  font-family: "ArvoRegular", serif;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  color: #3b3e6a;
+  padding: 0 2rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #686b8b;
+}
+
+
+
+
+
+
+
+
+
+
+
