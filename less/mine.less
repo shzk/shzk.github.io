@@ -1,0 +1,47 @@
+.border () {
+  border: 1px solid #939393;
+}
+
+@dark: #110e7c;
+@blue: #3db8f5;
+@light: #d1e3ec;
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url(../img/lesson10/bg.jpg);
+  padding-top: 12%;
+}
+
+.wrapper {
+  width: 91.2rem;
+  height: 62.4rem;
+  margin: 0 auto;
+  font-size: 0; /* чтобы избежать пробелов между блоками*/
+  background: #fff;
+  .border;
+}
+
+.square {
+  font-size: 10px; /* возвращаем размер шрифта */
+  display: inline-block;
+  width: 4.6rem;
+  height: 4.6rem;
+  .border;
+}
+
+.dark {
+  background-color: @dark;
+}
+
+.blue {
+  background-color: @blue;
+}
+
+.light {
+  background-color: @light;
+}
+
+

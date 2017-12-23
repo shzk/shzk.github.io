@@ -1,0 +1,16 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url("../img/lesson10/bg.jpg");
+  padding-top: 12%;
+}
+
+.wrapper {
+  width: 91.6rem;
+  height: 62.7rem;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #939393;
+}
