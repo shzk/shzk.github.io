@@ -76,7 +76,7 @@ body {
 }
 
 .user-nav {
-  margin-left: 19rem; /* для оформления - без учета псевдоэлемента */
+  margin-left: 19rem;
 }
 
 .top-nav__item {
@@ -190,7 +190,7 @@ body {
 
 
 .hero {
-  height: 50rem; /* для оформления */
+  height: 50rem; 
   background-color: #16181e;
   color: #fff;
   overflow: hidden;
