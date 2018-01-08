@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-weight: 100;
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	padding: 15px;
+}
+.image {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+.image-one {
+	background: url(../img/1.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-two {
+	background: url(../img/2.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-three {
+	background: url(../img/3.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-four {
+	background: url(../img/4.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.overlay {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	opacity: 0;
+	transition: all 0.2s;
+}
+
+.image-one .overlay {
+	transform-origin: 0% 0%;
+	transform: translateX(100%);
+}
+
+.image-one:hover .overlay {
+	background-color: rgba(255,122,122,0.7);
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+
+.image-two .overlay {
+	transform-origin: 0% 0%;
+	transform: translateY(100%);
+}
+
+.image-two:hover .overlay {
+	background-color: rgba(122,255,122,0.7);
+	transform: translateY(0%);
+	opacity: 1;
+}
+
+
+.image-three .overlay {
+	transform: translate(100%, 100%) rotate(-45deg);
+}
+
+.image-three:hover .overlay {
+	background-color: rgba(122,122,255,0.7);
+	transform: translate(0%, 0%) rotate(0deg);
+	opacity: 1;
+}
+
+.image-four .overlay {
+	transform: translate(-100%, -100%) rotate(45deg);
+}
+
+.image-four:hover .overlay {
+	background-color: rgba(209,165,16,0.7);
+	transform: translate(0%, 0%) rotate(0deg);
+	opacity: 1;
+}
+
+.btn {
+	display: block;
+	width: auto !important;
+	margin-top: 15px;
+	padding: 10px 30px;
+	width: 200px;	
+	background-color: #fff;
+	color: #000;
+	text-decoration: none;
+	border-radius: 20px;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
