@@ -1,0 +1,38 @@
+html {
+  font-size: 10px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Bad Script', cursive;
+}
+.flex-container {
+  font-size: 7.2rem;
+  color: #fff;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  justify-content: space-around;
+}
+.flex-item {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-1 {
+  background: url(../img/lesson14/1.jpg) no-repeat center;
+}
+.item-2 {
+  background: url(../img/lesson14/2.jpg) no-repeat center;
+}
+.item-3 {
+  background: url(../img/lesson14/3.jpg) no-repeat center;
+}
+.item-4 {
+  background: url(../img/lesson14/4.jpg) no-repeat center;
+}
