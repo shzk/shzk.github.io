@@ -8,7 +8,6 @@ body {
   font-family: 'Bad Script', cursive;
 }
 .flex-container {
-  font-size: 7.2rem;
   color: #fff;
   display: flex;
   background-color: rgba(0, 0, 0, 0.1);
@@ -16,23 +15,47 @@ body {
   justify-content: space-around;
 }
 .flex-item {
-  width: 25%;
-  height: 100%;
-  text-align: center;
-  background-color: red;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  text-align: center;
+  flex-basis: 25%;
+  transition: all 0.2s;
+}
+.flex-item:hover {
+  flex-basis: 100%;
+}
+.flex-item span {
+  font-size: 4rem;
+  text-shadow: 0px 0px 10ps #000;
 }
 .item-1 {
-  background: url(../img/lesson14/1.jpg) no-repeat center;
+  background: url(../img/lesson14/1.jpg) no-repeat center center;
+  background-size: cover;
 }
 .item-2 {
-  background: url(../img/lesson14/2.jpg) no-repeat center;
+  background: url(../img/lesson14/2.jpg) no-repeat center center;
+  background-size: cover;
 }
 .item-3 {
-  background: url(../img/lesson14/3.jpg) no-repeat center;
+  background: url(../img/lesson14/3.jpg) no-repeat center center;
+  background-size: cover;
 }
 .item-4 {
-  background: url(../img/lesson14/4.jpg) no-repeat center;
+  background: url(../img/lesson14/4.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media (max-width: 640px) {
+  .flex-container {
+    flex-flow: column;
+    height: 100vh;
+  }
+  .flex-item {
+    width: 100%;
+  }
+  .flex-item:hover {
+    flex-grow: 30%;
+  }
 }
