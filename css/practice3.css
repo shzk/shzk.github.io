@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+section {
+  padding: 20px 100px;
+  height: 100vh;
+}
+.menu {
+  background-color: purple;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -100vw;
+  transition: all 0.4s;
+}
+.menu-link {
+  z-index: 2;
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 20px;
+  top: 20px;
+}
+.menu-link span,
+.menu-link span::before,
+.menu-link span::after {
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 50%;
+  margin-top: -1px;
+  background-color: #333;
+}
+.menu-link span::before,
+.menu-link span::after {
+  content: "";
+  transition: all 0.3s;
+}
+.menu-link span::before {
+  margin-top: -6px;
+}
+.menu-link span::after {
+  margin-top: 4px;
+}
+.menu-link_active span {
+  background-color: transparent;
+}
+.menu-link_active span::before {
+  transform: rotate(135deg);
+  margin-top: 0;
+}
+.menu-link_active span::after {
+  transform: rotate(-135deg);
+  margin-top: 0;
+}
+.menu ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+.menu ul a {
+  line-height: 4;
+  font-weight: 100;
+  width: 100vw;
+  letter-spacing: 4px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s;
+}
+.menu ul a:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+.menu_active {
+  left: 0;
+}
